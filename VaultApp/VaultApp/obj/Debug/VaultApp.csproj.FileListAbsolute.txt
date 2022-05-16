@@ -1,0 +1,9 @@
+\\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\bin\Debug\VaultApp.exe.config
+\\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\bin\Debug\VaultApp.exe
+\\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\bin\Debug\VaultApp.pdb
+\\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\obj\Debug\VaultApp.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\obj\Debug\VaultApp.Properties.Resources.resources
+\\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\obj\Debug\VaultApp.csproj.GenerateResource.cache
+\\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\obj\Debug\VaultApp.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\obj\Debug\VaultApp.exe
+\\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\obj\Debug\VaultApp.pdb
