@@ -7,3 +7,4 @@
 \\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\obj\Debug\VaultApp.exe
 \\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\obj\Debug\VaultApp.pdb
 \\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\obj\Debug\VaultApp.VaultApp.resources
+\\Mac\Home\Documents\GitHub\vault-app\VaultApp\VaultApp\obj\Debug\VaultApp.csproj.AssemblyReference.cache

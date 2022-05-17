@@ -47,6 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Crypto\Decrypt.cs" />
+    <Compile Include="Crypto\Encrypt.cs" />
+    <Compile Include="Data\VaultData.cs" />
     <Compile Include="VaultApp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,5 +83,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
