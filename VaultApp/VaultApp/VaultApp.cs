@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace VaultApp
 {
-    public partial class Form1 : Form
+    public partial class VaultApp : Form
     {
-        public Form1()
+        public VaultApp()
         {
             InitializeComponent();
+        }
+
+        private void VaultApp_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

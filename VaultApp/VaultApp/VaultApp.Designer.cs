@@ -1,7 +1,7 @@
 ﻿
 namespace VaultApp
 {
-    partial class Form1
+    partial class VaultApp
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,18 @@ namespace VaultApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // VaultApp
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "VaultApp";
+            this.Text = "Vault";
+            this.Load += new System.EventHandler(this.VaultApp_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
