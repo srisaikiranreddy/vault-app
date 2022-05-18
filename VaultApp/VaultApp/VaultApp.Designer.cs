@@ -41,12 +41,13 @@ namespace VaultApp
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1244, 405);
+            this.button1.Location = new System.Drawing.Point(544, 402);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(195, 52);
             this.button1.TabIndex = 0;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -64,7 +65,7 @@ namespace VaultApp
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1398, 290);
+            this.dataGridView1.Size = new System.Drawing.Size(687, 290);
             this.dataGridView1.TabIndex = 2;
             // 
             // dataGridView2
@@ -74,7 +75,7 @@ namespace VaultApp
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 82;
             this.dataGridView2.RowTemplate.Height = 33;
-            this.dataGridView2.Size = new System.Drawing.Size(1398, 290);
+            this.dataGridView2.Size = new System.Drawing.Size(687, 290);
             this.dataGridView2.TabIndex = 3;
             // 
             // label2
@@ -90,14 +91,14 @@ namespace VaultApp
             // 
             this.progressBar1.Location = new System.Drawing.Point(52, 12);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(1398, 39);
+            this.progressBar1.Size = new System.Drawing.Size(687, 39);
             this.progressBar1.TabIndex = 5;
             // 
             // VaultApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1501, 851);
+            this.ClientSize = new System.Drawing.Size(790, 851);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView2);
