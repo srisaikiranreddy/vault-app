@@ -33,6 +33,10 @@ namespace VaultApp
             dataGridView2.DataSource = VaultData.Data();
             Encrypt.Enabled = true;
             Decrypt.Enabled = false;
+
+            //dataGridView1.Dock = DockStyle.Fill;
+            //this.Controls.Add(dataGridView1);
+            //InitializeDataGridView();
         }
 
         private void Encrypt_Click(object sender, EventArgs e)
@@ -42,6 +46,9 @@ namespace VaultApp
             EnDecrypt = new DataTable();
             EnDecrypt.Columns.Add("UserName", typeof(string));
             EnDecrypt.Columns.Add("Password", typeof(string));
+            StatusBar.Minimum = 0;
+            StatusBar.Value = 0;
+            StatusBar.Maximum = data.Count;
             for (int i = 0; i < data.Count; i++)
             {
                 byte[] userNameEnCrypted = Crypto.Encrypt.EncryptStringToBytes_Aes(data[i].ItemArray[0].ToString(),
@@ -50,7 +57,7 @@ namespace VaultApp
                 byte[] passwordEnCrypted = Crypto.Encrypt.EncryptStringToBytes_Aes(data[i].ItemArray[1].ToString(),
                     Convert.FromBase64String(appSettings["AesKey"]), Convert.FromBase64String(appSettings["AesIV"]));
 
-                StatusBar.Value = i * StatusBar.Maximum / data.Count;
+                StatusBar.PerformStep();
 
                 encrypt.Add(userNameEnCrypted, passwordEnCrypted);
 
@@ -73,6 +80,9 @@ namespace VaultApp
             EnDecrypt = new DataTable();
             EnDecrypt.Columns.Add("UserName", typeof(string));
             EnDecrypt.Columns.Add("Password", typeof(string));
+            StatusBar.Value = 0;
+            StatusBar.Minimum = 0;
+            StatusBar.Maximum = encrypt.Count;
             for (int i = 0; i < encrypt.Count; i++)
             {
                 string userNameDeCrypted = Crypto.Decrypt.DecryptStringFromBytes_Aes(encrypt.ElementAt(i).Key,
@@ -81,13 +91,12 @@ namespace VaultApp
                 string passwordDeCrypted = Crypto.Decrypt.DecryptStringFromBytes_Aes(encrypt.ElementAt(i).Value,
                    Convert.FromBase64String(appSettings["AesKey"]), Convert.FromBase64String(appSettings["AesIV"]));
 
-                StatusBar.Value = i * StatusBar.Maximum / encrypt.Count;
+                StatusBar.PerformStep();
 
                 EnDecrypt.Rows.Add(new object[]
                 {
                     userNameDeCrypted ,
                      passwordDeCrypted
-
                 });
             }
 
@@ -95,6 +104,7 @@ namespace VaultApp
             AutoResize();
             Encrypt.Enabled = true;
             Decrypt.Enabled = false;
+            
         }
 
         private void AutoResize()
@@ -105,6 +115,28 @@ namespace VaultApp
 
             dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+        }
+
+        private void InitializeDataGridView()
+        {
+            // Set up the DataGridView.
+            dataGridView1.Dock = DockStyle.Fill;
+
+            // Automatically generate the DataGridView columns.
+            dataGridView1.AutoGenerateColumns = true;
+
+            // Set up the data source.
+            dataGridView1.DataSource = VaultData.Data();
+
+            // Automatically resize the visible rows.
+            dataGridView1.AutoSizeRowsMode =
+                DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+
+            // Set the DataGridView control's border.
+            dataGridView1.BorderStyle = BorderStyle.Fixed3D;
+
+            // Put the cells in edit mode when user enters them.
+            dataGridView1.EditMode = DataGridViewEditMode.EditOnEnter;
         }
     }
 }

@@ -42,7 +42,7 @@ namespace VaultApp
             // 
             // Encrypt
             // 
-            this.Encrypt.Location = new System.Drawing.Point(52, 66);
+            this.Encrypt.Location = new System.Drawing.Point(654, 219);
             this.Encrypt.Name = "Encrypt";
             this.Encrypt.Size = new System.Drawing.Size(195, 52);
             this.Encrypt.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace VaultApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 133);
+            this.label1.Location = new System.Drawing.Point(47, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 25);
             this.label1.TabIndex = 1;
@@ -61,28 +61,28 @@ namespace VaultApp
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(52, 173);
+            this.dataGridView1.ColumnHeadersHeight = 46;
+            this.dataGridView1.Location = new System.Drawing.Point(52, 127);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1396, 416);
+            this.dataGridView1.Size = new System.Drawing.Size(596, 477);
             this.dataGridView1.TabIndex = 2;
             // 
             // dataGridView2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(52, 631);
+            this.dataGridView2.ColumnHeadersHeight = 46;
+            this.dataGridView2.Location = new System.Drawing.Point(865, 127);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 82;
             this.dataGridView2.RowTemplate.Height = 33;
-            this.dataGridView2.Size = new System.Drawing.Size(1396, 413);
+            this.dataGridView2.Size = new System.Drawing.Size(580, 477);
             this.dataGridView2.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 592);
+            this.label2.Location = new System.Drawing.Point(860, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 25);
             this.label2.TabIndex = 4;
@@ -90,14 +90,15 @@ namespace VaultApp
             // 
             // StatusBar
             // 
-            this.StatusBar.Location = new System.Drawing.Point(52, 12);
+            this.StatusBar.Location = new System.Drawing.Point(52, 28);
             this.StatusBar.Name = "StatusBar";
-            this.StatusBar.Size = new System.Drawing.Size(1396, 39);
+            this.StatusBar.Size = new System.Drawing.Size(1393, 39);
+            this.StatusBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.StatusBar.TabIndex = 5;
             // 
             // Decrypt
             // 
-            this.Decrypt.Location = new System.Drawing.Point(1253, 66);
+            this.Decrypt.Location = new System.Drawing.Point(654, 428);
             this.Decrypt.Name = "Decrypt";
             this.Decrypt.Size = new System.Drawing.Size(195, 52);
             this.Decrypt.TabIndex = 6;
@@ -109,7 +110,7 @@ namespace VaultApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1484, 1080);
+            this.ClientSize = new System.Drawing.Size(1480, 640);
             this.Controls.Add(this.Decrypt);
             this.Controls.Add(this.StatusBar);
             this.Controls.Add(this.label2);
