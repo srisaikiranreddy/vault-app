@@ -3,6 +3,6 @@ Athleticism is used for storing encrypted username and passwords. It using AES e
 
 ## Demo
 ### (localhost)
-  [![Watch the video](https://github.com/srisaikiranreddy/athleticism/blob/main/img/athleticism-demo.png)](https://youtu.be/9tIzzTrL1Z4)
+  [![Watch the video](https://github.com/srisaikiranreddy/vault-app/blob/main/cover.png)](https://youtu.be/9tIzzTrL1Z4)
   ### Video: https://youtu.be/9tIzzTrL1Z4
   
