@@ -13,12 +13,14 @@ namespace VaultApp.Data
         public static DataTable Data()
         {
             DataTable userInfo= new DataTable();
-            userInfo.Columns.Add("user name", typeof(string));
-            userInfo.Columns.Add("password", typeof(string));
+            userInfo.Columns.Add("UserName", typeof(string));
+            userInfo.Columns.Add("Password", typeof(string));
 
             userInfo.Rows.Add(new object[] { "Mike", "12345678" });
-            userInfo.Rows.Add(new object[] { "Mike", "123456" });
-            userInfo.Rows.Add(new object[] { "Mike", "1234567" });
+            userInfo.Rows.Add(new object[] { "Sai", "123456" });
+            userInfo.Rows.Add(new object[] { "Sam", "1234567" });
+            userInfo.Rows.Add(new object[] { "Nick", "1234567" });
+            userInfo.Rows.Add(new object[] { "Sa", "1234567" });
             return userInfo;
         }
 
