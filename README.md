@@ -1,5 +1,5 @@
 # Vault App.
-Athleticism is used for storing encrypted username and passwords. It using AES encryption. This can be used for messager app and used for user text messages end to end testing.
+VaultApp is used for storing encrypted username and passwords. It using AES encryption. This can be used for messager app and used for user text messages end to end testing.
 
 ## Demo
 ### (localhost)
